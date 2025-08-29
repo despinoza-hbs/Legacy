@@ -91,6 +91,8 @@ In this example we will be testing and running with Ollama on Red Hat Enterprise
   patchelf --remove-rpath /usr/local/app/rcs_bin/grid3.5/glibc-2.28/lib/ld-2.28.so
   
   mkdir llm; cd llm
+
+  curl -LO https://ollama.com/download/ollama-linux-amd64.tgz
   
   tar -zxvf ollama-linux-amd64.tgz
   
