@@ -1,8 +1,9 @@
 # Legacy
+
 Compile Glibc for legacy Enterprise Linux Systems
 
 
-Needs make 4.3 due to An issue with older versions of glibc and make (v4.4+) can cause the stdio-common module to build continuously, appearing as if it is using only one core and hanging the process. This problem is a result of a perturbed build graph in the glibc Makefiles, causing stdio-common to be re-evaluated and rebuilt over and over: 
+Needs make 4.3 due to An issue with older versions of glibc and make (v4.4+) can cause the stdio-common module to build continuously, appearing as if it is using only one core and hanging the process. This problem is a result of a perturbed build graph in the glibc Makefiles, causing stdio-common to be re-evaluated and rebuilt over and over:
 
   conda create -n buildlibc gcc gxx make=4.3 pexpect=4.9.0 texinfo -y
   
